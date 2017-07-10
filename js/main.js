@@ -16,78 +16,98 @@ var sign = ["aries",
 var array = [{
 	first: "Aries",
 	attributes: "Honest, Courageous, Passionate, Optimistic, Determined",
-	image: "",
+	image: ""
 },
 {
 	first: "Taurus",
 	attributes: "Patient, Reliable, Devoted, Responsible, Stable",
-	image: "",
+	image: ""
 },
 {
 	first: "Gemini",
 	attributes: "Gentle, Curious, Adaptable, Affectionate, Learns Quickly",
-	image: "",
+	image: ""
 },
 {
 	first: "Cancer",
 	attributes: "Loyal, Emotional, Sympathetic, Tenacious, Persuastive",
-	image: "",
+	image: ""
 },
 {
 	first: "Leo",
 	attributes: "Creative, Passionate, Generous, Warm-hearted, Cheerful",
-	image: "",
+	image: ""
 },
 {
 	first: "Virgo",
 	attributes: "Loyal, Analytical, Kind, Hardworking, Practical",
-	image: "",
+	image: ""
 },
 {
 	first: "Libra",
 	attributes: "Cooperative, Social, Fair-minded, Diplomatic, Gracious",
-	image: "",
+	image: ""
 },
 {
 	first: "Scorpio",
 	attributes: "Brave, Passionate, Recourceful, Stubborn, True friend",
-	image: "",
+	image: ""
 },
 {
 	first: "Sagittarius",
 	attributes: "Generous, Idealistic, Sense of Humor, Adventurous, Enthusiastic",
-	image: "",
+	image: ""
 },
 {
 	first: "Caricorn",
 	attributes: "Disiplined, Responsible, Self-control, Independant, Leader",
-	image: "",
+	image: ""
 },
 {
 	first: "Aquarius",
 	attributes: "Humanitarian, Progressive, Original, Loving, Intellectual",
-	image: "",
+	image: ""
 },
 {
 	first: "Pisces",
 	attributes: "Intuitive, Artistic, Gentle, Wise, Musical",
-	image: "",
+	image: ""
 }
 ];
 
 // The onclick function() that will take the input and display data
 
 
-// Function that console logs the input values
-var myfunc = function clickme () {
-	var inputdata = document.getElementById("sign-input");
-	var signname = document.getElementById("sign-name");
-	console.log(inputdata.value);
-};
- if (myfunc == array.first) {
- 	console.log(array.first);
- 	console.log(array.attributes);
- }
+// Function that displays the input values
+// var myfunc = function clickme () {
+// 	for (var i = 0; i < array.length; i++){
+// 	var inputdata = document.getElementById("sign-input");
+// 	var signname = document.getElementById("sign-name");
+// 	console.log(signname.value);
+// }
+// };
+ // if (inputdata.value == array.first) {
+ // 	console.log(array.first);
+ // 	console.log(array.attributes);
+ // }
+
+// displays the value from a property in the object
+ for (var i = 0; i < array.length; i++){
+ 	console.log(array[2].attributes);
+ 	// below code needs a function
+
+ 		function myfunction() {
+ 			// goes and gets value of entered text
+ 			var inputdata = document.getElementById("sign-input").value;
+ 			// compares input text value to value of the array.first
+ 	if (inputdata == "leo") 
+ 			document.getElementById("entertext").innerHTML = "This is the value entered" + inputdata;
+ 	};}
+ 	// above code needs and an if else statment to get a value from array if certian word is typed
+ 	document.getElementById("sign-info").innerHTML = array[4].attributes;
+ 	document.getElementById("sign-name").innerHTML = array[4].first;
+ 
+
 
 
 // if the value of the input matches a value of the array sign, then display the value of the array
