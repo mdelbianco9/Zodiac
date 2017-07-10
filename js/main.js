@@ -105,6 +105,15 @@ function myfunction() {
  		// Displays Lits of Attributes
  		document.getElementById("sign-info").innerHTML = array[1].attributes;
  	}
+ 	else if (inputdata == array[i].first) {
+ 		console.log("Pulling from array works");
+ 		// Displays Name of sign
+ 		document.getElementById("sign-name").innerHTML = array[i].first;
+ 		// Displays image
+
+ 		// Displays Lits of Attributes
+ 		document.getElementById("sign-info").innerHTML = array[i].attributes;
+ 	}
 
  		
  	}};
