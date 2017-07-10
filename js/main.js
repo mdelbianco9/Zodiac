@@ -75,63 +75,45 @@ var array = [{
 }
 ];
 
-// The onclick function() that will take the input and display data
 
 
-// Function that displays the input values
-// var myfunc = function clickme () {
-// 	for (var i = 0; i < array.length; i++){
-// 	var inputdata = document.getElementById("sign-input");
-// 	var signname = document.getElementById("sign-name");
-// 	console.log(signname.value);
-// }
-// };
- // if (inputdata.value == array.first) {
- // 	console.log(array.first);
- // 	console.log(array.attributes);
- // }
 
-// displays the value from a property in the object
- for (var i = 0; i < array.length; i++){
- 	console.log(array[2].attributes);
- 	// below code needs a function
+ 	// the problem is that  the if statment is not listening correctly. The function is just doing the "if ststments" return elements. 
+ 	// "for loop" is working
+ 	// "myfunction" wont restart after it returns correct value
+function myfunction() {
+	// 
+	for (var i = 0; i < array.length; i++){
+ 		// goes and gets value of entered text
+ 		var inputdata = document.getElementById("sign-input").value;
+ // compares input text value to value of a sign name
+ 	if (inputdata == "aries") {
+ 		console.log("Aries is working")
+ 		// Displays Name of sign
+ 		document.getElementById("sign-name").innerHTML = array[0].first;
+ 		// Displays image
 
- 		function myfunction() {
- 			// goes and gets value of entered text
- 			var inputdata = document.getElementById("sign-input").value;
- 			// compares input text value to value of the array.first
- 	if (inputdata == "leo") 
- 			document.getElementById("entertext").innerHTML = "This is the value entered" + inputdata;
- 	};}
- 	// above code needs and an if else statment to get a value from array if certian word is typed
- 	document.getElementById("sign-info").innerHTML = array[4].attributes;
- 	document.getElementById("sign-name").innerHTML = array[4].first;
+ 		// Displays Lits of Attributes
+ 		document.getElementById("sign-info").innerHTML = array[0].attributes;
+ 	}
+ 	else if (inputdata == "taurus") {
+ 		console.log("Taurus is working");
+ 		// Displays Name of sign
+ 		document.getElementById("sign-name").innerHTML = array[1].first;
+ 		// Displays image
+
+ 		// Displays Lits of Attributes
+ 		document.getElementById("sign-info").innerHTML = array[1].attributes;
+ 	}
+
+ 		
+ 	}};
+ 	
  
 
 
 
-// if the value of the input matches a value of the array sign, then display the value of the array
 
-
-
-
-// for ( var i = 0; i < sign.length; i++)
-// 	function clickme () {
-// 		// this gets the input from user
-// 		var input = document.getElementById("sign-input");
-// 		// this will be the name displayed when button is clicked
-// 		var display = document.getElementById("sign-name");
-// 			if (input.value == sign[i]) {
-// 			console.log("The sign is" + input.value);
-// 			};
-// 	};	
-// };
-
-// function myfunc () {
-// 	for ( var i = 0; i < array.length; i++) {
-
-// 	}
-// }
 
 
 
