@@ -87,25 +87,7 @@ function myfunction() {
  		// goes and gets value of entered text
  		var inputdata = document.getElementById("sign-input").value;
  // compares input text value to value of a sign name
- 	if (inputdata == "aries") {
- 		console.log("Aries is working")
- 		// Displays Name of sign
- 		document.getElementById("sign-name").innerHTML = array[0].first;
- 		// Displays image
-
- 		// Displays Lits of Attributes
- 		document.getElementById("sign-info").innerHTML = array[0].attributes;
- 	}
- 	else if (inputdata == "taurus") {
- 		console.log("Taurus is working");
- 		// Displays Name of sign
- 		document.getElementById("sign-name").innerHTML = array[1].first;
- 		// Displays image
-
- 		// Displays Lits of Attributes
- 		document.getElementById("sign-info").innerHTML = array[1].attributes;
- 	}
- 	else if (inputdata == array[i].first) {
+ 	if (inputdata == array[i].first) {
  		console.log("Pulling from array works");
  		// Displays Name of sign
  		document.getElementById("sign-name").innerHTML = array[i].first;
@@ -114,9 +96,8 @@ function myfunction() {
  		// Displays Lits of Attributes
  		document.getElementById("sign-info").innerHTML = array[i].attributes;
  	}
-
- 		
- 	}};
+ 	}
+ };
  	
  
 
