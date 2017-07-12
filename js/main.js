@@ -105,10 +105,10 @@ function myfunction() {
  		document.getElementById("sign-name").innerHTML = array[i].first;
  		// Displays birthdates of each sign
  		document.getElementById("birth-dates").innerHTML = array[i].birth;
- 		// Displays image
- 		document.getElementById("sign-image").src = array[i].image;
  		// Displays Lits of Attributes
  		document.getElementById("sign-info").innerHTML = array[i].attributes;
+ 		// Displays image
+ 		document.getElementById("sign-image").src = array[i].image;
  		// Allows the function to restart
  		return;
  	};

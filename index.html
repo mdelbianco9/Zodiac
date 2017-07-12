@@ -17,27 +17,31 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
+
   </head>
   <body>
   <!-- Contains Everything -->
-  <div class="container">
-    <h1>Enter Your Horoscope Sign</h1>
-    <!-- Text entered -->
-    <input id="sign-input">
-
-    <button onclick="myfunction()">Find Your Sign</button>
-
-    <div id="entertext"></div>
-    <!-- Sign Name -->
-    
-    <h1 id="sign-name"></h1>
-   
-    <!-- Birth dates -->
-    <div id="birth-dates"></div>
-    <!-- Sign Image -->
-    <img id="sign-image" src="">
-    <!-- Attributes of sign -->
-    <div id="sign-info"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+        <h1>Horoscope Magic</h1>
+        <!-- Text entered -->
+        <input id="sign-input" class="form-control input-lg" placeholder="Enter your Zodiac sign">
+        <!-- Button carries function out -->
+        <button onclick="myfunction()" class="btn btn-default btn-block btn-sm">Find Your Sign</button>
+      </div>
+    </div>
+        <!-- Sign Name -->
+        <h1 id="sign-name"></h1>
+        <!-- Birth dates -->
+        <div id="birth-dates"></div>
+        <!-- Attributes of sign -->
+        <div id="sign-info"></div>
+        <!-- Sign Image -->
+        <img id="sign-image" src="">
+        
   </div>
 
 

@@ -1,4 +1,78 @@
-.container {
+.col-md-8.col-sm-8 h1 {
+	margin-bottom: 4%;
+	font-family: 'Cantarell', sans-serif;
+	color: rgb(38, 43, 60);
+}
+
+.container-fluid {
 	text-align: center;
 	margin-top: 3%;
+	/*border: 1px solid red;*/
 }
+
+.form-control {
+	border-radius: 25px;
+	letter-spacing: 3px;
+	
+}
+
+.btn {
+	margin-top: 1%;
+	border-radius: 10px;
+	font-size: medium;
+	background-image: none;
+	border-color: rgb(28, 35, 48);
+	text-shadow: none;
+	box-shadow: none;
+}
+
+.btn:hover {
+	background-color: rgb(28, 35, 48);
+	color: white;
+	text-shadow: none;
+	box-shadow: none;
+	border-color: rgb(28, 35, 48);
+}
+
+.btn-default:onclick {
+	background-color: none;
+	border: none;
+}
+
+input {
+	text-align: center;
+}
+
+#sign-name {
+	margin-top: 3%;
+	font-family: 'Cantarell', sans-serif;
+}
+
+#birth-dates {
+	font-family: 'Cantarell', sans-serif;
+}
+
+#sign-info {
+	font-family: 'Cantarell', sans-serif;
+	font-size: medium;
+}
+
+#sign-image {
+	margin-top: 3%;
+	border: 1px solid rgb(38, 43, 60);
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
