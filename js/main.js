@@ -15,84 +15,103 @@ var sign = ["aries",
 // The characteristics of each sign in the form of an object with 5 names
 var array = [{
 	first: "ARIES",
-	brith: "March 21 - April 19",
+	birth: "March 21 - April 19",
 	attributes: "Honest, Courageous, Passionate, Optimistic, Determined",
+	compatible: "Gemini, Leo, Sagittarius, Aquarius",
 	image: "img/aries.jpg"
 },
 {
 	first: "TAURUS",
 	birth: "April 21 - May 20",
 	attributes: "Patient, Reliable, Devoted, Responsible, Stable",
+	compatible: "Cancer, Virgo, Capricorn, Pisces",
 	image: "img/taurus.png"
 },
 {
 	first: "GEMINI",
 	birth: "May 21 - June 20",
 	attributes: "Gentle, Curious, Adaptable, Affectionate, Learns Quickly",
+	compatible: "Aries, Leo, Libra, Aquarius",
 	image: "img/gemini.jpg"
 },
 {
 	first: "CANCER",
 	birth: "June 21 - July 22",
 	attributes: "Loyal, Emotional, Sympathetic, Tenacious, Persuastive",
+	compatible: "Taurus, Virgo, Scorpio, Pisces",
 	image: "img/cancer.jpg"
 },
 {
 	first: "LEO",
 	birth: "July 23 - August 22",
 	attributes: "Creative, Passionate, Generous, Warm-hearted, Cheerful",
+	compatible: "Aries, Gemini, Libra, Sagittarius",
 	image: "img/leo.jpg",
 },
 {
 	first: "VIRGO",
 	birth: "August 23 - September 22",
 	attributes: "Loyal, Analytical, Kind, Hardworking, Practical",
+	compatible: "Taurus, Cancer, Scorpio, Capricorn",
 	image: "img/virgo.jpg"
 },
 {
 	first: "LIBRA",
 	birth: "September 23 - October 22",
 	attributes: "Cooperative, Social, Fair-minded, Diplomatic, Gracious",
+	compatible: "Gemini, Leo, Sagittarius, Aquarius",
 	image: "img/libra.jpg"
 },
 {
 	first: "SCORPIO",
 	birth: "October 23 - November 21",
 	attributes: "Brave, Passionate, Recourceful, Stubborn, True friend",
+	compatible: "Cancer, Virgo, Capricorn, Pisces",
 	image: "img/scorpio.jpg"
 },
 {
 	first: "SAGITTARIUS",
 	birth: "November 22 - December 21",
 	attributes: "Generous, Idealistic, Sense of Humor, Adventurous, Enthusiastic",
+	compatible: "Aries, Leo, Libra, Aquarius",
 	image: "img/sagittarius.jpg"
 },
 {
 	first: "CAPRICORN",
 	birth: "December 22 - January 19",
 	attributes: "Disiplined, Responsible, Self-control, Independant, Leader",
+	compatible: "Taurus, Virgo, Scorpio, Pisces",
 	image: "img/capricorn.jpg"
 },
 {
 	first: "AQUARIUS",
 	birth: "January 20 - February 18",
 	attributes: "Humanitarian, Progressive, Original, Loving, Intellectual",
+	compatible: "Aries, Gemini, Libra, Sagittarius",
 	image: "img/aquarius.jpg"
 },
 {
 	first: "PISCES",
 	birth: "February 19 - March 20",
 	attributes: "Intuitive, Artistic, Gentle, Wise, Musical",
+	compatible: "Taurus, Cancer, Scorpio, Capricorn",
 	image: "img/pisces.jpg"
 }
 ];
 
+var month = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+var day = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+]
 
+// Triggers the function if the enter key is pressed
+var hello = document.getElementById('sign-input');
+hello.addEventListener('keypress', function enterKey(e) {
+	if(e.keyCode == 13) {
+		myfunction();
+	};
+}, false);
 
-
- 	// the problem is that  the if statment is not listening correctly. The function is just doing the "if ststments" return elements. 
- 	// "for loop" is working
- 	// "myfunction" wont restart after it returns correct value
+// Function to display info for user
 function myfunction() {
 	// Loops through the array to find the correct sign name 
 	for (var i = 0; i < array.length; i++){
@@ -105,23 +124,34 @@ function myfunction() {
  		document.getElementById("sign-name").innerHTML = array[i].first;
  		// Displays birthdates of each sign
  		document.getElementById("birth-dates").innerHTML = array[i].birth;
- 		// Displays Lits of Attributes
+ 		// Displays Lists of Attributes
  		document.getElementById("sign-info").innerHTML = array[i].attributes;
+ 		// Displays the compatability
+ 		document.getElementById("compat").innerHTML = "Best compatability: " + array[i].compatible;
  		// Displays image
  		document.getElementById("sign-image").src = array[i].image;
+ 		document.getElementById("sign-image").width = "300";
+ 		document.getElementById("sign-image").height = "300";
  		// Allows the function to restart
  		return;
+
  	};
+
+
+
  	// If "if" statment fails this will be done
  	console.log("no matches found")
  	document.getElementById("sign-name").innerHTML = "Sorry, No Matches Found"
  	document.getElementById("birth-dates").innerHTML = "";
  	document.getElementById("sign-image").src = "";
  	document.getElementById("sign-info").innerHTML = "";
+ 	document.getElementById("compat").innerHTML = "";
+ 	
 
  	};
  };
- 	
+
+
  
 
 

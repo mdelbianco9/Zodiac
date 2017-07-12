@@ -18,7 +18,7 @@
 
 .btn {
 	margin-top: 1%;
-	border-radius: 10px;
+	border-radius: 18px;
 	font-size: medium;
 	background-image: none;
 	border-color: rgb(28, 35, 48);
@@ -46,15 +46,19 @@ input {
 #sign-name {
 	margin-top: 3%;
 	font-family: 'Cantarell', sans-serif;
+	color: rgb(38, 43, 60);
 }
 
 #birth-dates {
 	font-family: 'Cantarell', sans-serif;
+	color: rgb(38, 43, 60);
 }
 
 #sign-info {
+	margin-top: 1%;
 	font-family: 'Cantarell', sans-serif;
 	font-size: medium;
+	color: rgb(38, 43, 60);
 }
 
 #sign-image {
@@ -63,7 +67,11 @@ input {
 	border-radius: 10px;
 }
 
-
+#compat {
+	font-family: 'Cantarell', sans-serif;
+	color: rgb(38, 43, 60);
+	font-size: medium;
+}
 
 
 
