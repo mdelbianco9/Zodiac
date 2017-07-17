@@ -108,6 +108,7 @@ hello.addEventListener('keypress', function enterKey(e) {
 	};
 }, false);
 
+
 // Function to display info for user
 function myfunction() {
 	// Loops through the array to find the correct sign name 
@@ -143,14 +144,45 @@ function myfunction() {
  	document.getElementById("sign-image").src = "";
  	document.getElementById("sign-info").innerHTML = "";
  	document.getElementById("compat").innerHTML = "";
- 	
-
  	};
  };
 
+document.getElementById("taurus").addEventListener("click", function(){
+    document.getElementById("sign-name").innerHTML = array[i].first;
+ 		// Displays birthdates of each sign
+ 		document.getElementById("birth-dates").innerHTML = array[i].birth;
+ 		// Displays Lists of Attributes
+ 		document.getElementById("sign-info").innerHTML = array[i].attributes;
+ 		// Displays the compatability
+ 		document.getElementById("compat").innerHTML = "Best compatability: " + array[i].compatible;
+ 		// Displays image
+ 		document.getElementById("sign-image").src = array[i].image;
+ 		document.getElementById("sign-image").width = "300";
+ 		document.getElementById("sign-image").height = "300";
+});
 
- 
+    $("li").click(function(event) {
+        console.log(event.target.id);
+       	var myid = event.target.id; 
+       	for (i = 0; i < sign.length; i++) {
+       		if (myid == sign[i]) {
+       		document.getElementById("sign-name").innerHTML = array[i].first;
+ 			// Displays birthdates of each sign
+ 			document.getElementById("birth-dates").innerHTML = array[i].birth;
+ 			// Displays Lists of Attributes
+ 			document.getElementById("sign-info").innerHTML = array[i].attributes;
+ 			// Displays the compatability
+ 			document.getElementById("compat").innerHTML = "Best compatability: " + array[i].compatible;
+ 			// Displays image
+ 			document.getElementById("sign-image").src = array[i].image;
+ 			document.getElementById("sign-image").width = "300";
+ 			document.getElementById("sign-image").height = "300";;
+ 			$("#sign-input").focus();
+       		}
 
+       	}
+       	
+    });
 
 
 

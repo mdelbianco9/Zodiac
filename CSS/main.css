@@ -34,6 +34,17 @@
 	border-color: rgb(28, 35, 48);
 }
 
+.dropdown-toggle {
+	background-color: rgb(128, 33, 46);
+	color: #fff;
+	font-weight: 200;
+}
+.dropdown-toggle:hover {
+	background-color: #fff;
+	color: rgb(48, 89, 119);
+
+}
+
 .btn-default:onclick {
 	background-color: none;
 	border: none;
@@ -73,12 +84,30 @@ input {
 	font-size: medium;
 }
 
+ul.dropdown-menu {
+	margin-left: 10%;
+	margin-top: 0;
+	text-align: center;
+	background-color: rgb(128, 33, 46);
+	color: #fff;
+}
 
+.dropdown {
+	display: inline-block;
+}
 
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
 
+.dropdown-menu li {
+	font-weight: 200;
+}
 
-
-
+.dropdown-menu li:hover {
+	background-color: rgb(77, 33, 46);
+	cursor: default;
+}
 
 
 
