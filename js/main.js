@@ -161,7 +161,9 @@ document.getElementById("taurus").addEventListener("click", function(){
  		document.getElementById("sign-image").height = "300";
 });
 
+// This function allows the user to select a date to find their sign
     $("li").click(function(event) {
+    	// returns the id of the li that is clicked on
         console.log(event.target.id);
        	var myid = event.target.id; 
        	for (i = 0; i < sign.length; i++) {
@@ -179,7 +181,6 @@ document.getElementById("taurus").addEventListener("click", function(){
  			document.getElementById("sign-image").height = "300";;
  			$("#sign-input").focus();
        		}
-
        	}
        	
     });
