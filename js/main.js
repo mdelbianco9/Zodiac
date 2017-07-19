@@ -108,6 +108,8 @@ hello.addEventListener('keypress', function enterKey(e) {
 	};
 }, false);
 
+// focuses on input after 3 seconds
+setTimeout(function(){$("#sign-input").focus(); }, 1000);
 
 // Function to display info for user
 function myfunction() {
@@ -162,7 +164,7 @@ document.getElementById("taurus").addEventListener("click", function(){
 });
 
 // This function allows the user to select a date to find their sign
-    $("li").click(function(event) {
+   var datefunc = $("li").click(function(event) {
     	// returns the id of the li that is clicked on
         console.log(event.target.id);
        	var myid = event.target.id; 
@@ -180,14 +182,13 @@ document.getElementById("taurus").addEventListener("click", function(){
  			document.getElementById("sign-image").width = "300";
  			document.getElementById("sign-image").height = "300";;
  			$("#sign-input").focus();
+ 			// document.getElementById("dropdownul").style.visibility = "hidden";
+
+ 			return;
        		}
        	}
        	
     });
-
-
-
-
 
 
 
